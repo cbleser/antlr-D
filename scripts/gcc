@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+# Dyrty fix to correct bug in DMD's link order.
+# Note. LINKCMD does not seem to work in linux
+
+foreach (@ARGV) {
+    if (m/^\-l/) {
+        push(@linkflags, $_);
+    } else {
+        push(@compilerflags, $_);
+    }
+}
+$cmd="/usr/bin/gcc ".join(" ",@compilerflags)." ".join(" ",@linkflags)."\n";
+print "$cmd";
+system($cmd);

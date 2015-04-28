@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+while (<>) {
+    if (m/^\s*module\s+([a-z|A-Z|_|\.|0-9]+)/) {
+	printf "$1";
+	last;
+    }
+}

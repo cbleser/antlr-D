@@ -1,0 +1,21 @@
+# Emacs backups
+*~
+# Object files
+*.o
+# Archive files
+*.a
+# Object directoty
+obj/*
+# Test script program
+ds
+# Codegen dir
+codegen/*
+antlrlib/*
+antlr/runtime/tests/*.d
+antlr/runtime/tests/*.tokens
+currentrevno.mk
+antlr/runtime/Version.d
+# Parser/Lexer/Walker
+parser_*
+lexer_*
+walker_*
