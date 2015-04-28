@@ -1,24 +1,24 @@
 # antlr-D
-ANTLR runtime for D-lang
+ANTLR runtime for D-lang.
 This code contain is translation of the ANTLR-runtime into D2.
 
 
 Porting
 ------
-Strings
+### Strings
 Tango uses char array's instead for String class like in Java.
 Because Tango-D supports three string types based on char, wchar and dchar
 this library use template types call char_t which can be set to
 (char, wchar or dhcar)
 
-Object
+### Object
 I have tried to avoid the class Object because D support template types
 which makes the code more readable and easier to maintain.
 The code uses less type casting than the Java version without Templates.
 In some case I have used Variant instead of Object.
 
 
-Runtime linking
+### Runtime linking
 D doesn't directly support runtime linking like in Java
 and I decided not to try to build runtime linking because
 it is difficult to debug an maintain.
