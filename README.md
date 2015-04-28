@@ -89,4 +89,4 @@ You can compile and run those samples by.
 
 StringTemplate
 --------------
-I also have a version of StringTemplate but is not maintained. But if somebody want to work with it I can update load it to github.
+I also have a version of StringTemplate but this is not maintained. But if somebody want to work with it I can update load it to github.
